@@ -67,14 +67,63 @@ gdp_df = get_gdp_data()
 # Set the title that appears at the top of the page.
 st.image("teteigf12.png")
 '''
-# TABLEAU DE BORD DE SUIVI DES DOSSIERS par Malick TRAORE
+# TABLEAU DE BORD DE SUIVI DES DOSSIERS
 Ce tableau de bord de l'[Inspection Générale des Finances](https://www.igf.finances.gouv.ci/) permet de visualiser
 l'état d'avancement des dossiers en cours à l'Inspection Générale des Finances.
 
-Ceci étant, merci.
 
 '''
 
 # Add some spacing
 ''
 ''
+
+# Définir les pages
+def page_accueil():
+    st.title("Page d'accueil")
+    st.write("Bienvenue sur la page d'accueil.")
+    if st.button("Missions d’audit interne"):
+        st.session_state["page"] = "page1"
+    if st.button("Missions d’inspection et d’évaluation"):
+        st.session_state["page"] = "page2"
+    if st.button("Missions d’étude et de conseil"):
+        st.session_state["page"] = "page3"
+
+def page_1():
+    #st.title("Page 1")
+    st.title("Bienvenue sur la page présentant l'état des lieux des Missions d’audit interne.")
+    if st.button("Retour à l'accueil"):
+        st.session_state["page"] = "accueil"
+    #if st.button("Missions d’inspection et d’évaluation"):
+        #st.session_state["page"] = "page2"
+    #if st.button("Missions d’étude et de conseil"):
+        #st.session_state["page"] = "page3"
+
+
+def page_2():
+    #st.title("Page 2")
+    st.title("Bienvenue sur la page présentant l'état des lieux des missions d’inspection et d’évaluation.")
+    if st.button("Retour à l'accueil"):
+        st.session_state["page"] = "accueil"
+
+
+def page_3():
+    #st.title("Page 3")
+    st.title("Bienvenue sur la page présentant l'état des lieux des missions d’étude et conseil.")
+    if st.button("Retour à l'accueil"):
+        st.session_state["page"] = "accueil"
+
+
+# Initialiser l'état de session
+if "page" not in st.session_state:
+    st.session_state["page"] = "accueil"
+
+# Afficher la page correspondant à l'état
+if st.session_state["page"] == "accueil":
+    page_accueil()
+elif st.session_state["page"] == "page1":
+    page_1()
+elif st.session_state["page"] == "page2":
+    page_2()
+elif st.session_state["page"] == "page3":
+    page_3()
