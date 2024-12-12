@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
-    page_title='TABLEAU DE BORD DE SUIVI DES DOSSIERS',
+    page_title='TABLEAU DE BORD DE SUIVI DES DOSSIERS par Malick TRAORE',
     page_icon='teteigf12.png', # This is an emoji shortcode. Could be a URL too.
     layout='wide'
 )
