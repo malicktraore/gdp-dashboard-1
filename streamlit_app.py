@@ -67,7 +67,7 @@ gdp_df = get_gdp_data()
 # Set the title that appears at the top of the page.
 st.image("teteigf12.png")
 '''
-# TABLEAU DE BORD DE SUIVI DES DOSSIERS
+# TABLEAU DE BORD DE SUIVI DES DOSSIERS par Malick
 
 Ce tableau de bord de l'[Inspection Générale des Finances](https://www.igf.finances.gouv.ci/) permet de visualiser
 l'état d'avancement des dossiers en cours à l'Inspection Générale des Finances.
