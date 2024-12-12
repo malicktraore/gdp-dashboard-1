@@ -70,6 +70,9 @@ st.image("teteigf12.png")
 # TABLEAU DE BORD DE SUIVI DES DOSSIERS par Malick TRAORE
 Ce tableau de bord de l'[Inspection Générale des Finances](https://www.igf.finances.gouv.ci/) permet de visualiser
 l'état d'avancement des dossiers en cours à l'Inspection Générale des Finances.
+
+Ceci étant, merci.
+
 '''
 
 # Add some spacing
